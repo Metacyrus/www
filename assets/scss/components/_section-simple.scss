@@ -1,0 +1,77 @@
+.section-simple {
+  font-size: 1.5rem;
+  padding: 3rem 0 5rem;
+  border-bottom: 1px solid currentColor;
+  background-repeat: no-repeat;
+  background-position: 5rem calc(100% - 5rem);
+  background-size: 0 0;
+
+  @include screen(sm) {
+    padding-right: 1rem;
+    padding-bottom: 10rem;
+    padding-left: 1rem;
+    background-size: 5rem 7rem;
+  }
+  &__inner {
+    @include container;
+  }
+  &__header {
+    font-family: $font--text-accent;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    &:after {
+      margin-left: 2rem;
+      content: '↓';
+    }
+  }
+  &__content {
+    line-height: 1.5;
+    text-align: center;
+
+    @include screen(sm) {
+      font-size: 3rem;
+      line-height: 1.125;
+    }
+    @include screen(md) {
+      font-size: 4.5rem;
+    }
+    p + p {
+      margin-top: 1em;
+    }
+    em {
+      font-family: $font--display;
+      font-size: 0.8em;
+      font-style: normal;
+      display: block;
+
+      @include screen(sm) {
+        font-size: 0.5em;
+      }
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      &:after {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: block;
+        height: 0.07em;
+        content: '';
+        transition: transform 0.4s $ease--in-out;
+        transform: scaleX(0);
+        transform-origin: 100% 0;
+        background-color: currentColor;
+      }
+      &:hover,
+      &:focus {
+        &:after {
+          transform: scaleX(1);
+          transform-origin: 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.symbols-bar {
+  padding: 3rem 1rem;
+  background-color: var(--background);
+
+  @include screen(sm) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 45rem;
+    margin: 0 auto;
+
+    @include screen(sm) {
+      grid-gap: unset;
+    }
+  }
+  svg {
+    width: 100%;
+    max-width: 3rem;
+  }
+  &__icon {
+    &--outlined {
+      color: $color--contrast;
+    }
+  }
+  &--heavy {
+    svg {
+      max-width: 5.75rem;
+
+      @include screen(sm) {
+        max-width: 8rem;
+      }
+    }
+  }
+  &--five {
+    svg {
+      max-width: auto;
+      max-height: 3rem;
+
+      @include screen(sm) {
+        max-width: auto;
+      }
+    }
+  }
+}

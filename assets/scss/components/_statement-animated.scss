@@ -1,0 +1,93 @@
+.statement-animated {
+  font-size: 1.5rem;
+  padding: 3rem 0;
+
+  @include screen(sm) {
+    font-size: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  &__inner {
+    @include container;
+  }
+  &__title {
+    position: relative;
+    max-width: 23ch;
+    margin-bottom: 15rem;
+
+    @include screen(lg) {
+      margin-bottom: 28rem;
+    }
+  }
+  &__title-wrapped {
+    display: inline-block;
+    max-width: 9ch;
+
+    @include screen(540px) {
+      max-width: 11ch;
+    }
+    @include screen(850px) {
+      max-width: unset;
+    }
+  }
+  &__svg {
+    position: absolute;
+    top: 4.5ch;
+    right: 0;
+    display: inline-block;
+    width: 6ch;
+    padding-right: 1ch;
+
+    --percent-complete: 0;
+    stroke-width: 4;
+    @include screen(540px) {
+      top: 3.5ch;
+    }
+    @include screen(sm) {
+      top: 3.3ch;
+      padding-right: 1.5ch;
+    }
+    @include screen(850px) {
+      top: 2ch;
+    }
+    @include screen(lg) {
+      width: 28rem;
+      margin-right: 4rem;
+      padding-right: 0;
+
+      stroke-width: 3;
+    }
+  }
+  &__positioned {
+    position: absolute;
+    top: 9.5ch;
+    right: 0;
+    display: block;
+    text-align: right;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 115%, 0% 115%);
+
+    @include screen(540px) {
+      top: 8.5ch;
+    }
+    @include screen(sm) {
+      top: 7.5ch;
+    }
+    @include screen(850px) {
+      top: 6.2ch;
+    }
+    @include screen(lg) {
+      top: 34rem;
+    }
+  }
+
+  &__footer {
+    font-size: 1rem;
+    line-height: 1;
+    max-width: 15ch;
+    text-transform: uppercase;
+
+    @include screen(sm) {
+      font-size: 1.25rem;
+    }
+  }
+}

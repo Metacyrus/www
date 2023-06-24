@@ -1,0 +1,46 @@
+{
+  "name": "datalands",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
+    "lint": "npm run lint:js && npm run lint:style",
+    "slicemachine": "start-slicemachine --port 9999"
+  },
+  "dependencies": {
+    "@prismicio/vue": "^2.0.11",
+    "core-js": "^3.9.1",
+    "gsap": "^3.7.1",
+    "nuxt": "^2.15.3",
+    "nuxt-sm": "0.0.6",
+    "sass": "^1.35.1",
+    "sass-loader": "^10.1.1",
+    "splitting": "^1.0.6",
+    "three": "^0.130.1",
+    "vue-lottie": "^0.2.1",
+    "vue-marquee-text-component": "^1.2.0",
+    "vue-slicezone": "0.0.30"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/prismic": "^1.3.1",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^21.0.0"
+  }
+}
