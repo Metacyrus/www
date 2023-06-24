@@ -6,10 +6,23 @@
     <div class="section-simple__inner">
       <h2 class="section-simple__header">{{ slice.primary.header }}</h2>
 
-      <div
-        class="section-simple__content"
-        v-html="$prismic.asHtml(slice.primary.content)"
-      />
+      <div class="section-simple__content">
+        <p>
+          New Business
+          <br>
+          <a href="mailto:connect@metacyrus.tech">
+            connect@metacyrus.tech
+          </a>
+        </p>
+        <p></p>
+        <p>
+          General
+          <br>
+          <a href="mailto:connect@metacyrus.tech">
+            connect@metacyrus.tech
+          </a>
+        </p>
+      </div>
     </div>
   </section>
 </template>
