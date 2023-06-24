@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt --openssl-legacy-provider build",
-    "start": "nuxt --openssl-legacy-provider start",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
