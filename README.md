@@ -20,4 +20,4 @@ $ npm run dev # nuxt
 $ npm run generate # nuxt generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+To have what this code look like, check out [Website](https://metacyrus.tech).
