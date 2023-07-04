@@ -12,6 +12,8 @@
     "lint": "npm run lint:js && npm run lint:style",
     "slicemachine": "start-slicemachine --port 9999"
   },
+
+  
   "dependencies": {
     "@prismicio/vue": "^2.0.11",
     "core-js": "^3.9.1",
